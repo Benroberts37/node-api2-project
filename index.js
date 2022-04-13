@@ -1,11 +1,6 @@
 // require your server and launch it here
-const server = require('./api/server');
+const server = require('./api/server.js');
 
-const port = 9000;
-
-// START YOUR SERVER HERE
-server.listen(port, () => {
-    console.log('listening on', port)
+server.listen(9000, () => {
+  console.log('server is working on port 9000')
 })
-
-module.exports = server
